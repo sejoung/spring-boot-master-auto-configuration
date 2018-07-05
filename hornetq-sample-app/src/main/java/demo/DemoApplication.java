@@ -1,12 +1,10 @@
 package demo;
 
-import hornetq.autoconfigure.HornetQConfigurationCustomizer;
 import org.hornetq.jms.server.config.JMSConfiguration;
 import org.hornetq.jms.server.config.impl.JMSConfigurationImpl;
 import org.hornetq.jms.server.config.impl.JMSQueueConfigurationImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -16,6 +14,8 @@ import org.springframework.jms.annotation.JmsListener;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
+
+import hornetq.autoconfigure.HornetQConfigurationCustomizer;
 
 @SpringBootApplication //(exclude = HornetQAutoConfiguration.class)
 public class DemoApplication {
